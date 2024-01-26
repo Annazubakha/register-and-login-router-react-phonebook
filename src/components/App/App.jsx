@@ -12,12 +12,15 @@ export const App = () => {
     dispatch(fetchContactsThunk());
   }, [dispatch]);
   return (
-    <div className={s.container}>
-      <h1 className={s.main_title}>Phonebook</h1>
-      <ContactForm />
-      <h2 className={s.title}>Contacts</h2>
-      <ContactsFilter />
-      <ContactList />
-    </div>
+    <>
+      <header className="px-16 py-8 bg-[#ad3e02]">hello</header>
+      <div className="bg-[#aaaaaa] px-16 py-8">
+        {/* <h1 className="text-center mx-auto">Phonebook</h1> */}
+        <ContactForm />
+        <h2 className={s.title}>Contacts</h2>
+        <ContactsFilter />
+        <ContactList />
+      </div>
+    </>
   );
 };
