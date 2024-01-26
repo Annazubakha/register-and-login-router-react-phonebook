@@ -1,5 +1,4 @@
 import { ContactListElem } from 'components/ContactListElem/ContactListElem';
-import s from './ContactList.module.css';
 import { useSelector } from 'react-redux';
 import { selectFilteredContacts } from '../../redux/selectors';
 
@@ -7,7 +6,7 @@ export const ContactList = () => {
   const items = useSelector(selectFilteredContacts);
   return (
     <>
-      <ul className={s.list}>
+      <ol className="flex flex-col gap-2 text-[28px] font-[500] list-decimal text-primary]">
         {items.map(contact => (
           <ContactListElem
             key={contact.id}
@@ -16,7 +15,7 @@ export const ContactList = () => {
             id={contact.id}
           />
         ))}
-      </ul>
+      </ol>
     </>
   );
 };

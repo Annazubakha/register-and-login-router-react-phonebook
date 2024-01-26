@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { nanoid } from 'nanoid';
-import s from './ContactForm.module.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { addContactThunk } from '../../redux/operations';
 import { toast } from 'react-toastify';
 import { selectContacts } from '../../redux/selectors';
+import { IoPerson } from 'react-icons/io5';
+import { FaPhone } from 'react-icons/fa6';
 
 export const ContactForm = () => {
   const dispatch = useDispatch();
@@ -53,51 +54,27 @@ export const ContactForm = () => {
 
   return (
     <>
-      <form className={s.form} onSubmit={handleSubmit}>
-        <label className={s.label}>
-          Name:
+      <form className="flex flex-col gap-4 " onSubmit={handleSubmit}>
+        <label className="flex gap-2 justify-between items-center text-[28px] text-primary">
+          <IoPerson />
           <input
             type="text"
             pattern="^([a-zA-Z]{2,}\s[a-zA-Z]{1,}'?-?[a-zA-Z]{2,}\s?([a-zA-Z]{1,})?)"
             title="Please enter name like this: Anna Zubakha"
             minLength="4"
             placeholder="Type here the full name"
-            className="input input-bordered input-secondary w-full max-w-xs"
+            className="input input-bordered input-primary w-[250px]"
             name="name"
             id={nanoid()}
             required
             value={name}
             onChange={handleChange}
           />
-          {/* <input
-          placeholder="Anna Zubakha"
-          pattern="^([a-zA-Z]{2,}\s[a-zA-Z]{1,}'?-?[a-zA-Z]{2,}\s?([a-zA-Z]{1,})?)"
-          title="Please enter name like this: Anna Zubakha"
-          minLength="4"
-          type="text"
-          name="name"
-          id={nanoid()}
-          required
-          value={name}
-          onChange={handleChange}
-        /> */}
         </label>
-        <label className={s.label}>
-          Number:
-          {/* <input
-            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-            title="Please enter number like this: 123-456-7890"
-            placeholder="Type here the phone number"
-            className="input input-bordered input-secondary w-full max-w-xs"
-            type="tel"
-            name="number"
-            required
-            id={nanoid()}
-            value={number}
-            onChange={handleChange}
-          /> */}
+        <label className="flex gap-2 justify-between items-center text-[28px] text-primary">
+          <FaPhone />
           <input
-            className="input input-bordered input-secondary w-full max-w-xs"
+            className="input input-bordered input-primary w-[250px]"
             placeholder="Type here the phone number"
             title="Please enter number like this: 123-456-7890"
             pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
@@ -109,9 +86,14 @@ export const ContactForm = () => {
             onChange={handleChange}
           />
         </label>
-        <button className={s.form_btn} type="submit">
-          Add contact
-        </button>
+        <div className="text-center">
+          <button
+            className="btn btn-outline btn-primary w-[120px] text-[16px]"
+            type="submit"
+          >
+            Add contact
+          </button>
+        </div>
       </form>
     </>
   );

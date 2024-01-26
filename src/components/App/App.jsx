@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import { ContactForm } from '../ContactForm/ContactForm';
 import { ContactList } from 'components/ContactList/ContactList ';
 import { ContactsFilter } from 'components/Filter/Filter';
-import s from './App.module.css';
 import { useDispatch } from 'react-redux';
 import { fetchContactsThunk } from '../../redux/operations';
 export const App = () => {
@@ -13,11 +12,12 @@ export const App = () => {
   }, [dispatch]);
   return (
     <>
-      <header className="px-16 py-8 bg-[#ad3e02]">hello</header>
-      <div className="bg-[#aaaaaa] px-16 py-8">
-        {/* <h1 className="text-center mx-auto">Phonebook</h1> */}
+      <header className="px-16 py-8 bg-[#7F7679]">Phonebook</header>
+      <div className="font-['Oswald'] italic font-normal h-[calc(100vh_-_88px)] bg-[#E5E4E2] px-16 py-16 flex  gap-5 flex-col items-center h">
         <ContactForm />
-        <h2 className={s.title}>Contacts</h2>
+        <div className="divider divider-primary text-[28px] text-primary font-bold ">
+          Contacts
+        </div>
         <ContactsFilter />
         <ContactList />
       </div>
