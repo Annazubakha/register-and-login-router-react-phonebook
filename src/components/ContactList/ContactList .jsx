@@ -6,7 +6,7 @@ export const ContactList = () => {
   const items = useSelector(selectFilteredContacts);
   return (
     <>
-      <ol className="flex flex-col gap-2 text-[28px] font-[500] list-decimal text-primary]">
+      <ol className="flex flex-col gap-2 text-[28px] font-[500] list-decimal pl-[32px] text-primary]">
         {items.map(contact => (
           <ContactListElem
             key={contact.id}

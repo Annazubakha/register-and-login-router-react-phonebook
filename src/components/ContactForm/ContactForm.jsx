@@ -54,7 +54,7 @@ export const ContactForm = () => {
 
   return (
     <>
-      <form className="flex flex-col gap-4 " onSubmit={handleSubmit}>
+      <form className="flex gap-4 pb-[24px]" onSubmit={handleSubmit}>
         <label className="flex gap-2 justify-between items-center text-[28px] text-primary">
           <IoPerson />
           <input
