@@ -1,7 +1,7 @@
 import { createSlice, isAnyOf } from '@reduxjs/toolkit';
 import {
   addContactThunk,
-  deleteontactThunk,
+  deleteContactThunk,
   fetchContactsThunk,
 } from './operations';
 
@@ -21,14 +21,14 @@ const contactsSlice = createSlice({
       .addCase(addContactThunk.fulfilled, (state, { payload }) => {
         state.items.push(payload);
       })
-      .addCase(deleteontactThunk.fulfilled, (state, { payload }) => {
+      .addCase(deleteContactThunk.fulfilled, (state, { payload }) => {
         state.items = state.items.filter(item => item.id !== payload.id);
       })
       .addMatcher(
         isAnyOf(
           fetchContactsThunk.pending,
           addContactThunk.pending,
-          deleteontactThunk.pending
+          deleteContactThunk.pending
         ),
         (state, { payload }) => {
           state.loading = true;
@@ -38,7 +38,7 @@ const contactsSlice = createSlice({
         isAnyOf(
           fetchContactsThunk.fulfilled,
           addContactThunk.fulfilled,
-          deleteontactThunk.fulfilled
+          deleteContactThunk.fulfilled
         ),
         (state, { payload }) => {
           state.loading = false;
@@ -48,7 +48,7 @@ const contactsSlice = createSlice({
         isAnyOf(
           fetchContactsThunk.rejected,
           addContactThunk.rejected,
-          deleteontactThunk.rejected
+          deleteContactThunk.rejected
         ),
         (state, { payload }) => {
           state.error = payload;
@@ -58,4 +58,3 @@ const contactsSlice = createSlice({
 });
 
 export const phonebookReducer = contactsSlice.reducer;
-// export const { addContact, deleteContact } = contactsSlice.actions;
