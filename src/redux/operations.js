@@ -99,7 +99,7 @@ export const refreshUserThunk = createAsyncThunk(
       auth: { token },
     } = thunkAPI.getState();
     if (!token) {
-      return;
+      return thunkAPI.rejectWithValue('There is no token');
     }
     try {
       setToken(token);

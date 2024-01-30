@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { nanoid } from 'nanoid';
 import { useDispatch, useSelector } from 'react-redux';
-import { addContactThunk } from '../../redux/operations';
 import { toast } from 'react-toastify';
-import { selectContacts } from '../../redux/selectors';
 import { IoPerson } from 'react-icons/io5';
 import { FaPhone } from 'react-icons/fa6';
+
+import { selectContacts } from '../../redux/selectors';
+
+import { addContactThunk } from '../../redux/operations';
 
 export const ContactForm = () => {
   const dispatch = useDispatch();

@@ -1,6 +1,6 @@
-import { filterContacts } from '../../redux/filterSlice';
 import { useDispatch } from 'react-redux';
 import { FaFilter } from 'react-icons/fa6';
+import { filterContacts } from '../../redux/filterSlice';
 export const ContactsFilter = () => {
   const dispatch = useDispatch();
   return (

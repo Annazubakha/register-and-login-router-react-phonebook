@@ -6,6 +6,7 @@ import { loginThunk } from '../../redux/operations';
 const Login = () => {
   const { register, reset, handleSubmit } = useForm();
   const dispatch = useDispatch();
+
   const submit = data => {
     dispatch(loginThunk(data));
     reset();

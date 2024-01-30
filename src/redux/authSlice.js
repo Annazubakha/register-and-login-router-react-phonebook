@@ -14,6 +14,7 @@ const initialState = {
   token: null,
   isLoggedIn: false,
   isLoading: false,
+  isRefreshing: false,
 };
 
 const slice = createSlice({
@@ -36,7 +37,14 @@ const slice = createSlice({
       })
       .addCase(refreshUserThunk.fulfilled, (state, { payload }) => {
         state.user = payload;
-        state.isLoading = true;
+        state.isLoggedIn = true;
+        state.isRefreshing = false;
+      })
+      .addCase(refreshUserThunk.pending, state => {
+        state.isRefreshing = true;
+      })
+      .addCase(refreshUserThunk.rejected, state => {
+        state.isRefreshing = false;
       });
   },
 });

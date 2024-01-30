@@ -1,8 +1,10 @@
+import React, { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+
 import { ContactForm } from 'components/ContactForm/ContactForm';
 import { ContactList } from 'components/ContactList/ContactList ';
 import { ContactsFilter } from 'components/Filter/Filter';
-import React, { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
+
 import { fetchContactsThunk } from '../../redux/operations';
 
 const Contacts = () => {
