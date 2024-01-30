@@ -1,11 +1,10 @@
-import React, { Suspense } from 'react';
+import React from 'react';
 import { useSelector } from 'react-redux';
-import { NavLink, Outlet } from 'react-router-dom';
 
 import { selectIsLoggedIn } from '../../redux/selectors';
 import { AuthDetails } from './AuthDetails';
 import UserMenu from 'components/Usermenu/UserMenu';
-import { Loader } from 'components/Loader/Loader';
+import { NavLink } from 'react-router-dom';
 
 export const Navbar = () => {
   const isLoggedIn = useSelector(selectIsLoggedIn);
