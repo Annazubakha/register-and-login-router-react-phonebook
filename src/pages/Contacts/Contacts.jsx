@@ -14,7 +14,7 @@ const Contacts = () => {
     dispatch(fetchContactsThunk());
   }, [dispatch]);
   return (
-    <div className="font-['Oswald'] italic font-normal h-[calc(100vh_-_80px)] bg-[#E5E4E2] px-16 py-16 flex  gap-5 flex-col items-left">
+    <div className="font-['Oswald'] italic font-normal h-[calc(100vh_-_80px)] bg-base-300 px-16 py-16 flex  gap-5 flex-col items-left">
       <ContactForm />
       <div className="divider divider-primary text-[28px] text-primary font-bold ">
         Contacts

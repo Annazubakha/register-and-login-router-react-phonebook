@@ -26,7 +26,7 @@ const Register = () => {
     reset();
   };
   return (
-    <div className="hero h-[calc(100vh_-_80px)] bg-base-200 ">
+    <div className="hero h-[calc(100vh_-_80px)]  bg-base-300  ">
       <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100 text-primary italic ">
         <form
           className="card-body  font-['Oswald'] p-[16px]"
