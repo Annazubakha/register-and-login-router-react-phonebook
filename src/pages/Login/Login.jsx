@@ -12,7 +12,7 @@ const Login = () => {
     reset();
   };
   return (
-    <div className="hero h-[calc(100vh_-_88px)]  bg-base-300 ">
+    <div className="hero h-[calc(100vh_-_88px)]  bg-base-300 text-primary ">
       <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100 italic">
         <form
           className="card-body font-['Oswald']"
