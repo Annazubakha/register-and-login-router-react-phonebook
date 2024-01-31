@@ -5,11 +5,11 @@ export const AuthDetails = () => {
   return (
     <div className="flex-none">
       <ul className="flex gap-4 items-center">
-        <li>
+        {/* <li>
           <Link to="/contacts" className="text-[24px]">
             Contacts
           </Link>
-        </li>
+        </li> */}
         <li>
           <Link to="/register" className="text-[20px]">
             SignUp

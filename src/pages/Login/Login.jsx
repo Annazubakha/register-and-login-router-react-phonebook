@@ -2,6 +2,7 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import { useDispatch } from 'react-redux';
 import { loginThunk } from '../../redux/operations';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
   const { register, reset, handleSubmit } = useForm();
@@ -43,6 +44,13 @@ const Login = () => {
               className="input input-bordered input-primary"
               required
             />
+          </div>
+          <div className="text-[18px]">
+            Don't have an account?
+            <Link to="/register" className="underline underline-offset-1">
+              {' '}
+              Sign up
+            </Link>
           </div>
           <div className="form-control mt-6">
             <button to="/contacts" className="btn btn-primary  text-[18px] ">

@@ -1,4 +1,4 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice, isAnyOf } from '@reduxjs/toolkit';
 import {
   loginThunk,
   logoutThunk,
@@ -15,6 +15,7 @@ const initialState = {
   isLoggedIn: false,
   isLoading: false,
   isRefreshing: false,
+  error: null,
 };
 
 const slice = createSlice({
@@ -45,7 +46,40 @@ const slice = createSlice({
       })
       .addCase(refreshUserThunk.rejected, state => {
         state.isRefreshing = false;
-      });
+      })
+      .addMatcher(
+        isAnyOf(
+          registerThunk.pending,
+          loginThunk.pending,
+          logoutThunk.pending,
+          refreshUserThunk.pending
+        ),
+        state => {
+          state.isLoading = true;
+        }
+      )
+      .addMatcher(
+        isAnyOf(
+          registerThunk.fulfilled,
+          loginThunk.fulfilled,
+          refreshUserThunk.fulfilled,
+          logoutThunk.fulfilled
+        ),
+        state => {
+          state.isLoading = false;
+        }
+      )
+      .addMatcher(
+        isAnyOf(
+          registerThunk.rejected,
+          loginThunk.rejected,
+          refreshUserThunk.rejected,
+          logoutThunk.rejected
+        ),
+        (state, { payload }) => {
+          state.error = payload;
+        }
+      );
   },
 });
 

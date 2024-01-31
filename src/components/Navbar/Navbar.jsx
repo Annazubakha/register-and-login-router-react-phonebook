@@ -13,7 +13,7 @@ export const Navbar = () => {
       <div className="navbar  px-16 py-4 bg-[#D1D1D1] font-['Oswald'] font-bold    italic text-primary  ">
         <div className="flex-1">
           <NavLink to="/" className=" text-[32px] ">
-            Home
+            PHONEBOOK
           </NavLink>
         </div>
         <div>{isLoggedIn ? <UserMenu /> : <AuthDetails />}</div>

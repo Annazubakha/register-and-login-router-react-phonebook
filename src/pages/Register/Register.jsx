@@ -7,6 +7,7 @@ import { schema } from '../../components/schemas/registerSchema';
 
 import { registerThunk } from '../../redux/operations';
 import { Inputs } from 'components/Forms/Inputs';
+import { Link } from 'react-router-dom';
 
 const Register = () => {
   const {
@@ -56,7 +57,13 @@ const Register = () => {
             errors={errors}
             label="Password"
           />
-
+          <div className="text-[18px]">
+            Have an account?
+            <Link to="/login" className="underline underline-offset-1">
+              {' '}
+              Log in
+            </Link>
+          </div>
           <div className="form-control mt-6">
             <button className="btn btn-primary  text-[18px] ">Register</button>
           </div>
