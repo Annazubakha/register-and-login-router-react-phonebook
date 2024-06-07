@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/goit-react-hw-08-phonebook/static/css/main.b74e9dac.css",
-    "main.js": "/goit-react-hw-08-phonebook/static/js/main.119bc06b.js",
-    "static/js/544.74962ab1.chunk.js": "/goit-react-hw-08-phonebook/static/js/544.74962ab1.chunk.js",
-    "static/js/292.4f340755.chunk.js": "/goit-react-hw-08-phonebook/static/js/292.4f340755.chunk.js",
-    "static/js/427.c9679d26.chunk.js": "/goit-react-hw-08-phonebook/static/js/427.c9679d26.chunk.js",
-    "static/js/728.85b58cea.chunk.js": "/goit-react-hw-08-phonebook/static/js/728.85b58cea.chunk.js",
-    "static/js/134.ce6c0847.chunk.js": "/goit-react-hw-08-phonebook/static/js/134.ce6c0847.chunk.js",
-    "static/js/690.b420848a.chunk.js": "/goit-react-hw-08-phonebook/static/js/690.b420848a.chunk.js",
-    "static/js/668.92784952.chunk.js": "/goit-react-hw-08-phonebook/static/js/668.92784952.chunk.js",
-    "index.html": "/goit-react-hw-08-phonebook/index.html",
-    "main.b74e9dac.css.map": "/goit-react-hw-08-phonebook/static/css/main.b74e9dac.css.map",
-    "main.119bc06b.js.map": "/goit-react-hw-08-phonebook/static/js/main.119bc06b.js.map",
-    "544.74962ab1.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/544.74962ab1.chunk.js.map",
-    "292.4f340755.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/292.4f340755.chunk.js.map",
-    "427.c9679d26.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/427.c9679d26.chunk.js.map",
-    "728.85b58cea.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/728.85b58cea.chunk.js.map",
-    "134.ce6c0847.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/134.ce6c0847.chunk.js.map",
-    "690.b420848a.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/690.b420848a.chunk.js.map",
-    "668.92784952.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/668.92784952.chunk.js.map"
+    "main.css": "/register-and-login-routes-react-phonebook/static/css/main.b74e9dac.css",
+    "main.js": "/register-and-login-routes-react-phonebook/static/js/main.55a04c36.js",
+    "static/js/544.74962ab1.chunk.js": "/register-and-login-routes-react-phonebook/static/js/544.74962ab1.chunk.js",
+    "static/js/292.4f340755.chunk.js": "/register-and-login-routes-react-phonebook/static/js/292.4f340755.chunk.js",
+    "static/js/427.c9679d26.chunk.js": "/register-and-login-routes-react-phonebook/static/js/427.c9679d26.chunk.js",
+    "static/js/728.85b58cea.chunk.js": "/register-and-login-routes-react-phonebook/static/js/728.85b58cea.chunk.js",
+    "static/js/134.ce6c0847.chunk.js": "/register-and-login-routes-react-phonebook/static/js/134.ce6c0847.chunk.js",
+    "static/js/690.b420848a.chunk.js": "/register-and-login-routes-react-phonebook/static/js/690.b420848a.chunk.js",
+    "static/js/668.92784952.chunk.js": "/register-and-login-routes-react-phonebook/static/js/668.92784952.chunk.js",
+    "index.html": "/register-and-login-routes-react-phonebook/index.html",
+    "main.b74e9dac.css.map": "/register-and-login-routes-react-phonebook/static/css/main.b74e9dac.css.map",
+    "main.55a04c36.js.map": "/register-and-login-routes-react-phonebook/static/js/main.55a04c36.js.map",
+    "544.74962ab1.chunk.js.map": "/register-and-login-routes-react-phonebook/static/js/544.74962ab1.chunk.js.map",
+    "292.4f340755.chunk.js.map": "/register-and-login-routes-react-phonebook/static/js/292.4f340755.chunk.js.map",
+    "427.c9679d26.chunk.js.map": "/register-and-login-routes-react-phonebook/static/js/427.c9679d26.chunk.js.map",
+    "728.85b58cea.chunk.js.map": "/register-and-login-routes-react-phonebook/static/js/728.85b58cea.chunk.js.map",
+    "134.ce6c0847.chunk.js.map": "/register-and-login-routes-react-phonebook/static/js/134.ce6c0847.chunk.js.map",
+    "690.b420848a.chunk.js.map": "/register-and-login-routes-react-phonebook/static/js/690.b420848a.chunk.js.map",
+    "668.92784952.chunk.js.map": "/register-and-login-routes-react-phonebook/static/js/668.92784952.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b74e9dac.css",
-    "static/js/main.119bc06b.js"
+    "static/js/main.55a04c36.js"
   ]
 }
